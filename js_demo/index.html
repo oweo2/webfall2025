@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karina | JS Demo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script type="text/JavaScript" src="js/script.js"></script>
+</head>
+<body>
+    <h1>JavaScript Demo</h1>
+
+    <div class="container">
+        <div class="column">
+            <h2>Onclick events</h2>
+            <p>Click <a href="https://www.google.com" target="_blank" onclick="alert('Warning! You\'ll be leaving my website!\nAre you sure?')">HERE<i class="material-icons" style="font-size: small;">open_in_new</i></a></p>
+        </div>
+        <div class="column">
+            <h2>Doing math</h2>
+            <p>What is 4+1?</p>
+            <button onclick="document.getElementById('add').innerHTML=4+1">Show answer</button>
+            <p id="add"></p>
+        </div>
+        <div class="column">
+            <h2>Changing text</h2>
+            <p id="change-text">This text will change.</p>
+            <button onclick="document.getElementById('change-text').innerHTML='This text has been changed.'">Change text</button>
+        </div>
+        <div class="column">
+            <h2>Adding the time</h2>
+            <button onclick="document.getElementById('date').innerHTML=Date()">Show date and time</button>
+            <p id="date"></p>
+        </div>
+        <div class="column">
+            <h2>Making a function</h2>
+            <p>The 'pFun()' function will add text below.</p>
+            <button onclick="pFun()">Run the function</button>
+            <p id="p-fun"></p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="column">
+            <h2>Returning user data</h2>
+            <button onclick="askName()">Enter your name</button>
+            <p id="ask-name"></p>
+        </div>
+        <div class="column">
+            <h2>Asking questions in an external document</h2>
+            <button onclick = "askQuestion()">Show difficult question</button>
+            <p id="question"></p>
+        </div>
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column"></div>
+    </div>
+
+    <script>
+        /*alert("Is Irene very smort?");
+        alert("Warning!\nI'm not spamming you!");*/
+
+        function pFun() {
+            var p = document.getElementById('p-fun');
+            p.innerHTML = 'This is the function output.';
+            p.style.color = 'blue'
+            p.style.fontWeight = 'bold'
+        }
+
+        function askName() {
+            var nameReturn = document.getElementById('ask-name')
+            var name = prompt('Please enter your name in the box below.')
+            if (name == '') {
+                alert('Type something.')
+            } else if (name == 'Irene' | name == 'Taylor' | name == 'Ms. Hollinghsead') {
+                nameReturn.innerHTML = name + ' is very smort.'
+            } else {
+                nameReturn.innerHTML = 'Hello ' + name + '.'
+            }
+        }
+    </script>
+</body>
+</html>

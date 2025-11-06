@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karina CSS Demo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Creepster" rel="stylesheet">
+</head>
+<body>
+    <div class="nav_container">
+        <ul class="nav">
+            <li><a href="index.html"><i class="material-icons">home</i> Home</a></li>
+            <li><a href="about.html"><i class="material-icons">person</i> About</a></li>
+            <li><a href="contact.html"><i class="material-icons">email</i> Contact</a></li>
+        </ul>
+    </div>
+
+    <h1>Today, we will learn about adding style with CSS!</h1>
+
+    <h2>Inline CSS</h2>
+    <div class="box">
+        <p style="color: lightcoral;">I want this text to be <b>red</b>.</p>
+        <p style="color: royalblue;">I want this text to be <b>blue</b>.</p>
+        <p style="font-size: 50px;">I want this text to be <b>very big</b>.</p>
+        <p style="color: rgb(84, 49, 13); font-family: impact;">I want this text to be <b>POO</b>!</p>
+    </div>
+
+    <h2>Internal Styling</h2>
+    <div class="container">
+        <div class="column">
+            <h3>IDs</h3>
+            <p id="green-text">This text has an id of "green-text". Now it's green!</p>
+            <!-- The id "green-text" can only be used ONCE! -->
+        </div>
+        <div class="column">
+            <h3>Element Selectors</h3>
+            <p>I can style all H2's the same!</p>
+        </div>
+        <div class="column">
+            <h3>Class Selectors</h3>
+            <p>I can apply it to anything!</p>
+            <p class="test">This is part of a class.</p>
+            <ul class="test">
+                <li>So is this...</li>
+                <li>And this...</li>
+                <li>And this!</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2>External Styling</h2>
+    <div class="copy">
+        <p>This paragraph is part of a div</p>
+        <p>So is this one!</p>
+        <img src="images/kitten.jpg" width="900">
+        <p>This is how we use spans.</p>
+        <p>This <span id="span1">word</span> and this <span id="span2">group of words</span> will be styled differently.</p>
+    </div>
+</body>
+</html>
