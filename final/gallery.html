@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pickling - Gallery</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" type="image/x-icon" href="images/icons/photo.png">
+    <script type="text/JavaScript" src="js/script.js"></script>
+
+    <style>
+        img {
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="index.html"><i class="material-icons">home</i> Home</a></li>
+        <li><a href="about.html"><i class="material-icons">info</i> About</a></li>
+        <li><a class="active" href="gallery.html"><i class="material-icons">photo</i> Gallery</a></li>
+        <li><a href="contact.html"><i class="material-icons">email</i> Contact</a></li>
+        <li style="float:right"><a href="mystery.html"><i class="material-icons">question_mark</i> Mystery</a></li>
+    </ul>
+
+    <h1>What to Pickle</h1>
+
+    <p class="block"><i class="material-icons">warning</i> Make sure to follow <b>tested</b> recipes and pay attention to warnings and disclaimers. This way, you can avoid botulism poisoning.</p>
+
+    <h2>What did we pickle?</h2>
+    <p>This is what we pickled for our LT3 Survival Fair project.</p>
+    <div class="container">
+        <div class="column">
+            <h3>Baby Cucumber</h3>
+            <img class="enlarge" src="images/gallery/cucumber.jpg" alt="baby cucumber" width="175">
+            <p id="cucumber">no rating</p>
+            <button onclick="rate('cucumber')">Rate</button>
+        </div>
+        <div class="column">
+            <h3>White Radish</h3>
+            <img class="enlarge" src="images/gallery/radish.webp" alt="white radish" width="175">
+            <p id="radish">no rating</p>
+            <button onclick="rate('radish')">Rate</button>
+        </div>
+        <div class="column">
+            <h3>Napa Cabbage</h3>
+            <img class="enlarge" src="images/gallery/cabbage.jpg" alt="napa cabbage" width="175">
+            <p id="cabbage">no rating</p>
+            <button onclick="rate('cabbage')">Rate</button>
+        </div>
+        <div class="column">
+            <h3>Red Onion</h3>
+            <img class="enlarge" src="images/gallery/onion.jpg" alt="red onion" width="175">
+            <p id="onion">no rating</p>
+            <button onclick="rate('onion')">Rate</button>
+        </div>
+        <div class="column">
+            <h3>Fuji Apple</h3>
+            <img class="enlarge" src="images/gallery/apple.jpg" alt="Fuji apple" width="175">
+            <p id="apple">no rating</p>
+            <button onclick="rate('apple')">Rate</button>
+        </div>
+    </div>
+
+    <h2>What else?</h2>
+    <p>Obviously, we didn't cover everything that can be pickled. Here are some other common foods you can try.</p>
+    <div class="container">
+        <div class="column">
+            <h3>Carrots</h3>
+            <img class="enlarge" src="images/gallery/carrot.webp" alt="carrots" width="175">
+            <p id="carrots">no rating</p>
+            <button onclick="rate('carrots')">Rate</button>
+        </div>
+        <div class="column">
+            <h3>Beets</h3>
+            <img class="enlarge" src="images/gallery/beet.webp" alt="beets" width="175">
+            <p id="beets">no rating</p>
+            <button onclick="rate('beets')">Rate</button>
+        </div>
+        <div class="column">
+            <h3>Green Beans</h3>
+            <img class="enlarge" src="images/gallery/green_bean.webp" alt="green beans" width="175">
+            <p id="green_beans">no rating</p>
+            <button onclick="rate('green_beans')">Rate</button>
+        </div>
+        <div class="column">
+            <h3>Bell Peppers</h3>
+            <img class="enlarge" src="images/gallery/bell_pepper.webp" alt="bell peppers" width="175">
+            <p id="peppers">no rating</p>
+            <button onclick="rate('peppers')">Rate</button>
+        </div>
+        <div class="column">
+            <h3>Okra</h3>
+            <img class="enlarge" src="images/gallery/okra.webp" alt="okra" width="175">
+            <p id="okra">no rating</p>
+            <button onclick="rate('okra')">Rate</button>
+        </div>
+    </div>
+</body>
+</html>
